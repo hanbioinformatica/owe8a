@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="cv.xsl"?>
+
+  
+<cv>
+    <personalia>
+        <naam>Martijn van der Bruggen</naam>
+        <gebdatum>07-07-1970</gebdatum>
+        <geslacht>Man</geslacht>
+        <burgstaat>Samenwonend</burgstaat>
+        <nationaliteit>Nederlandse</nationaliteit>
+        <email>Martijn.vanderBruggen@han.nl</email>
+    </personalia>
+    <studie>
+        <opleiding>
+            <naam>Post Doctorale Lerarenopleiding</naam>
+            <periode>1995 - 1996</periode>
+            <school>Vrije Universiteit Amsterdam</school>
+            <diploma></diploma>
+        </opleiding>
+        <opleiding>
+            <naam>Biochemie</naam>
+            <periode>1990 - 1995</periode>
+            <school>Katholieke Universiteit Nijmegen</school>
+            <diploma></diploma>
+            <plaatje>http://www.ru.nl/publish/varianten/2634/ru_toplogo_eng.gif</plaatje>
+        </opleiding>
+    </studie>
+    <werk>
+        <baan>
+            <functie>Docent</functie>
+            <periode>04-2006 - Heden</periode>
+            <bedrijf>Hogeschool van Arnhem en Nijmegen</bedrijf>
+        </baan>
+        <baan>
+            <functie>Trainer/consultant</functie>
+            <periode>09-1997 - 03-2006</periode>
+            <bedrijf>Oracle Nederland</bedrijf>
+        </baan>
+        <baan>
+            <functie>Docent</functie>
+            <periode>09-1996 - 09-1997</periode>
+            <bedrijf>Mill Hill College</bedrijf>
+        </baan>
+    </werk>
+    <referenties>
+        <referentie>
+            <bedrijf>Hogeschool van Arnhem en Nijmegen</bedrijf>
+            <naam>Studenten</naam>
+            <telefoon>onbekend</telefoon>
+            <email>studenten@han.nl</email>
+        </referentie>
+    </referenties>
+    <hobbies>
+        <hobby>
+            <naam>Programmeren</naam>
+        </hobby>
+        <hobby>
+            <naam>Koffie drinken</naam>
+        </hobby>
+    </hobbies>
+</cv>

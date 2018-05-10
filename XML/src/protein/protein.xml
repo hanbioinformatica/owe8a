@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="protein.xsl"?>
+<protein_set xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="protein.xsd">
+        
+    <protein>
+        <accession>P26954</accession>
+        <entry_name>IL3B_MOUSE</entry_name>
+        <protein_name>Interleukin-3 receptor class II
+            beta chain [Precursor]
+        </protein_name>
+        <gene_name>CSF2RB2</gene_name>
+        <gene_name>AI2CA</gene_name>
+        <gene_name>IL3RB2</gene_name>
+        <gene_name>IL3R</gene_name>
+       
+        <organism taxonomy_id="10090">Mus musculus</organism>
+        <cross_reference database="EMBL" id="M29855"/>
+        <cross_reference database="EMBL" id="AAA39295"/>
+        <cross_reference database="PIR" id="A40091"/>
+
+        <cross_reference database="MGD" id="MGI:1339760"/>
+        <cross_reference database="InterPro" id="IPR002996"/>
+        <comment>FUNCTION: IN MOUSE THERE ARE TWO CLASSES OF
+          HIGH-AFFINITY IL-3 RECEPTORS. ONE CONTAINS THIS IL-3-
+          SPECIFIC BETA CHAIN AND THE OTHER CONTAINS THE BETA
+          CHAIN ALSO SHARED BY HIGH-AFFINITY IL-5 AND GM-CSF
+          RECEPTORS.</comment>
+        <comment>SUBUNIT: Heterodimer of an alpha
+        and a beta chain.</comment>
+        <comment>SUBCELLULAR LOCATION: Type I
+        membrane protein.</comment>
+        <comment>SIMILARITY: BELONGS TO THE CYTOKINE
+        FAMILY OF RECEPTORS.
+        </comment>
+        <keyword>Receptor</keyword>
+        <keyword>Glycoprotein</keyword>
+        <keyword>Signal</keyword>
+    </protein>
+</protein_set>

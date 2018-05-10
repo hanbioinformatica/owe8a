@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:annotation>
+        <xs:documentation>
+                    Sample XML Schema for representing Protein data.
+                </xs:documentation>
+    </xs:annotation>
+    <xs:element name="protein_set">
+        <xs:annotation>
+            <xs:documentation>
+                            A protein set can have one or more protein elements.
+                        </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:restriction base="xs:anyType">
+                    <xs:sequence>
+                        <xs:element ref="protein" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:restriction>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="protein">
+        <xs:annotation>
+            <xs:documentation>Main Protein Element</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:restriction base="xs:anyType">
+                    <xs:sequence>
+                        <xs:element name="accession" type="xs:string"/>
+                        <xs:element name="entry_name" type="xs:string"/>
+                        <xs:element name="protein_name" type="xs:string"/>
+                        <xs:element name="gene_name" type="xs:string"
+                                                    maxOccurs="1"/>
+                        <xs:element ref="organism"/>
+                        <xs:element ref="cross_reference" minOccurs="0"
+                                                    maxOccurs="unbounded"/>
+                        <xs:element name="comment" type="xs:string" minOccurs="0"
+                                                    maxOccurs="unbounded"/>
+                        <xs:element name="keyword" type="xs:string" minOccurs="0"
+                                                    maxOccurs="10"/>
+                    </xs:sequence>
+                </xs:restriction>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="organism">
+        <xs:annotation>
+            <xs:documentation>
+                            Organism for referencing NCBI Taxonomy ID
+                        </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="taxonomy_id" type="xs:integer"
+                                            use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="cross_reference">
+        <xs:annotation>
+            <xs:documentation>Cross refererence to other database.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:restriction base="xs:anyType">
+                    <xs:attribute name="database" type="xs:string" use="required"/>
+                    <xs:attribute name="id" type="xs:string" use="required"/>
+                </xs:restriction>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
