@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="@cytosine.nl" uuid="49689ab8-3496-4f32-94d3-0164c96c3f2b">
+      <database-info product="Oracle" version="Oracle Database 10g Express Edition Release 10.2.0.1.0 - Production" jdbc-version="4.0" driver-name="Oracle JDBC driver" driver-version="12.1.0.2.0">
+        <extra-name-characters>$#</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>martijn</user-name>
+      <introspection-schemas>*:MARTIJN</introspection-schemas>
+    </data-source>
+  </component>
+</project>
