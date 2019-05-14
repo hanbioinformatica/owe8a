@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/protein.dtd
+
+--><!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE protein_set SYSTEM "protein.dtd">
+
+    <protein_set>
+    ...
+    </protein_set>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT protein_set (protein)*>
+<!ATTLIST protein_set
+    xmlns:xsi CDATA #IMPLIED
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT protein (keyword|comment|cross_reference|organism|gene_name|protein_name|entry_name|accession)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT accession (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT entry_name (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT protein_name (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT gene_name (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT organism (#PCDATA)>
+<!ATTLIST organism
+    taxonomy_id CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT cross_reference EMPTY>
+<!ATTLIST cross_reference
+    id CDATA #IMPLIED
+    database CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT comment (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT keyword (#PCDATA)>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../owe4a/.idea/owe4a_flaskApps.iml" filepath="$PROJECT_DIR$/../../owe4a/.idea/owe4a_flaskApps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/textminingNLTK.iml" filepath="$PROJECT_DIR$/.idea/textminingNLTK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../owe8a_week4_advancedFlask/.idea/week4_advancedFlask.iml" filepath="$PROJECT_DIR$/../owe8a_week4_advancedFlask/.idea/week4_advancedFlask.iml" />
+    </modules>
+  </component>
+</project>

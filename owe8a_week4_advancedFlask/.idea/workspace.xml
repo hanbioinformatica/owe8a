@@ -1,26 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a33a0313-e5a0-4339-a48e-ba633d82b101" name="Default Changelist" comment="">
+    <list default="true" id="c5d6ba67-bdc2-46fb-99a2-b177c3b1a44a" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../demo/.idea/demo.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../demo1/.idea/demo1.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../react/.idea/react.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../untitled/.idea/untitled.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../week4_advancedFlask/.idea/week4_advancedFlask.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../week4_advancedFlask/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week2_basisFlask/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week2_basisFlask/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week2_basisFlask/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week2_basisFlask/.idea/week2_basisFlask.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week2_basisFlask/cookie.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week2_basisFlask/demoShow.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week2_basisFlask/demoTemplate.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week2_basisFlask/sessie.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week2_basisFlask/simpleTemplate.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week2_basisFlask/templates/cookieHTML.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week2_basisFlask/templates/demoTemplate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week2_basisFlask/templates/simpleTemplate.html" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/week4_advancedFlask.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +19,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="47" />
-    <option name="y" value="27" />
+    <option name="x" value="810" />
+    <option name="y" value="57" />
     <option name="width" value="832" />
     <option name="height" value="816" />
   </component>
@@ -43,24 +30,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="week1_basisFlask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="week1_basisFlask" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../owe4a" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../week1_basisFlask" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -76,7 +52,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Flask server.week4_advancedFlask">
     <configuration name="week1_basisFlask" type="Python.FlaskServer">
       <module name="week1_basisFlask" />
       <option name="target" value="$PROJECT_DIR$/cookie.py" />
@@ -84,7 +60,22 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="week4_advancedFlask" type="Python.FlaskServer">
+      <module name="week4_advancedFlask" />
+      <option name="target" value="$PROJECT_DIR$/mysql1.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -98,23 +89,23 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a33a0313-e5a0-4339-a48e-ba633d82b101" name="Default Changelist" comment="" />
-      <created>1556194063362</created>
+      <changelist id="c5d6ba67-bdc2-46fb-99a2-b177c3b1a44a" name="Default Changelist" comment="" />
+      <created>1556194027567</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1556194063362</updated>
-      <workItem from="1556194064593" duration="116000" />
+      <updated>1556194027567</updated>
+      <workItem from="1556194029089" duration="35000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116000" />
+    <option name="totallyTimeSpent" value="35000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="27" width="1873" height="1053" extended-state="6" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24958949" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.107279696" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
