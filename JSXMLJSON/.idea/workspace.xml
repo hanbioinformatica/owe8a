@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74d1bae6-2009-47f7-9a4f-20c997f44e0a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/JS/js1_alert.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/JS/js1_alert.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/JS/js2_date.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/JS/js2_date.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/JS/js3_berekening.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/JS/js3_berekening.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/JS/js4_functie.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/JS/js4_functie.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/XML/cv/cv.xml" beforeDir="false" afterPath="$PROJECT_DIR$/static/XML/cv/cv.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/XML/protein/protein.xml" beforeDir="false" afterPath="$PROJECT_DIR$/static/XML/protein/protein.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/XML/protein/protein.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/static/XML/protein/protein.xsd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../XML/build.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../XML/manifest.mf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../XML/nbproject/build-impl.xml" beforeDir="false" />
@@ -71,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/static/XML/cv/cv.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
-              <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -99,7 +91,7 @@
         <entry file="file://$PROJECT_DIR$/static/JS/js2_date.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
-              <caret line="5" column="17" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="8" />
+              <caret line="5" column="17" selection-start-line="7" selection-start-column="7" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -117,7 +109,7 @@
         <entry file="file://$PROJECT_DIR$/static/JS/js4_functie.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -126,7 +118,7 @@
         <entry file="file://$PROJECT_DIR$/static/JS/js5_library.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
-              <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -134,8 +126,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/JS/js6_d3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+            <state relative-caret-position="190">
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -175,8 +167,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="137" />
-    <option name="y" value="64" />
+    <option name="x" value="2074" />
+    <option name="y" value="115" />
     <option name="width" value="1672" />
     <option name="height" value="965" />
   </component>
@@ -193,31 +185,6 @@
             <path>
               <item name="JSXMLJSON" type="b2602c69:ProjectViewProjectNode" />
               <item name="JSXMLJSON" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JSXMLJSON" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSXMLJSON" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JSXMLJSON" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSXMLJSON" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="XML" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JSXMLJSON" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSXMLJSON" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="XML" type="462c0819:PsiDirectoryNode" />
-              <item name="cv" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JSXMLJSON" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSXMLJSON" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="XML" type="462c0819:PsiDirectoryNode" />
-              <item name="protein" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -298,16 +265,17 @@
       <updated>1557860519497</updated>
       <workItem from="1557860520971" duration="2594000" />
       <workItem from="1557902613740" duration="3520000" />
+      <workItem from="1557918856773" duration="742000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6114000" />
+    <option name="totallyTimeSpent" value="6856000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="137" y="64" width="1672" height="965" extended-state="0" />
+    <frame x="2074" y="115" width="1672" height="965" extended-state="1" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28351784" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28720787" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -353,48 +321,6 @@
     <entry file="file://$PROJECT_DIR$/static/XML/protein/protein.dtd">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/JS/js1_alert.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/JS/js2_date.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="17" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/JS/js3_berekening.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/JS/js4_functie.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/JS/js5_library.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/JS/js6_d3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/XML/protein/protein.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -408,10 +334,52 @@
     <entry file="file://$PROJECT_DIR$/static/XML/cv/cv2.xsl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/JS/js1_alert.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/JS/js2_date.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="17" selection-start-line="7" selection-start-column="7" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/JS/js3_berekening.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/JS/js4_functie.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/JS/js5_library.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/JS/js6_d3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/XML/cv/cv.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
-          <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
         </state>
       </provider>
     </entry>
