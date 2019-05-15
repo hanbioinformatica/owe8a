@@ -33,7 +33,7 @@
                         <xs:element name="entry_name" type="xs:string"/>
                         <xs:element name="protein_name" type="xs:string"/>
                         <xs:element name="gene_name" type="xs:string"
-                                                    maxOccurs="10"/>
+                                                    maxOccurs="1"/>
                         <xs:element ref="organism"/>
                         <xs:element ref="cross_reference" minOccurs="0"
                                                     maxOccurs="unbounded"/>
