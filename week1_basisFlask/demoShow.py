@@ -11,7 +11,7 @@ def hello_world():
 
 @app.route('/show', methods=['GET', 'POST'])
 def show():
-    #kleur = request.args.get('kleur', '')
+    #kleur = request.args.get('kleur')
     kleur = request.form.get('kleur', '')
     return '''<body bgcolor="%s">kleur
             <form method="POST">
