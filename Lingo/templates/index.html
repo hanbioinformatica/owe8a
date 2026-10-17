@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lingo</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; }
+    body { margin: 0; min-height: 100vh; background: #f3f6ff; color: #172554; }
+    main { width: min(92%, 32rem); margin: 3rem auto; padding: 2rem;
+           background: white; border-radius: 1rem; box-shadow: 0 1rem 3rem #17255418; }
+    h1 { margin: 0; color: #164eaa; font-size: 2.6rem; letter-spacing: .18em; }
+    figure { margin: 1rem auto 1.5rem; text-align: center; }
+    figure img { display: block; width: min(100%, 15rem); max-height: 20rem;
+                 object-fit: cover; margin: 0 auto .5rem; border-radius: .75rem; }
+    figcaption { color: #475569; font-size: .8rem; }
+    figcaption a { color: #164eaa; }
+    .hint, .message { padding: .8rem 1rem; border-radius: .6rem; background: #eef4ff; }
+    .error { color: #a11; background: #fff0f0; }
+    .board { display: grid; gap: .5rem; margin: 1.5rem 0; }
+    .row { display: flex; justify-content: center; gap: .5rem; }
+    .tile { display: grid; place-items: center; width: 3rem; height: 3rem;
+            border: 2px solid #cbd5e1; border-radius: .45rem; font-size: 1.4rem;
+            font-weight: 700; text-transform: uppercase; }
+    .correct { background: #22a447; border-color: #22a447; color: white; }
+    .present { background: #e3b522; border-color: #e3b522; color: white; }
+    .absent { background: #64748b; border-color: #64748b; color: white; }
+    form { display: flex; justify-content: center; gap: .5rem; margin: 1rem 0; }
+    input { width: 10rem; padding: .7rem; border: 1px solid #94a3b8;
+            border-radius: .5rem; font: inherit; text-transform: lowercase; }
+    button { padding: .7rem 1rem; border: 0; border-radius: .5rem;
+             background: #164eaa; color: white; font: inherit; cursor: pointer; }
+    button:hover { background: #123d85; }
+    .restart { background: #475569; }
+    .legend { color: #475569; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>LINGO</h1>
+    <figure>
+      <img src="{{ url_for('static', filename='lucille-werner.jpg') }}"
+           alt="Lucille Werner spreekt tijdens een congres van de Europese Volkspartij."
+           width="240" height="286">
+      <figcaption>
+        Lucille Werner — foto door
+        <a href="https://commons.wikimedia.org/wiki/File:EPP_Congress_-_Day_1_(52112775070)_(cropped).jpg">European People's Party</a>,
+        <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.
+      </figcaption>
+    </figure>
+    <p>Raad het Nederlandse woord van vijf letters uit de woordenlijst. Je hebt vijf pogingen.</p>
+    <p class="hint">De eerste letter is: <strong>{{ game.target[0]|upper }}</strong></p>
+
+    {% if error %}<p class="message error" role="alert">{{ error }}</p>{% endif %}
+    {% if message %}<p class="message" role="status">{{ message }}</p>{% endif %}
+
+    <section class="board" aria-label="Lingo-bord">
+      {% for row in range(max_guesses) %}
+      <div class="row">
+        {% for col in range(5) %}
+          {% if row < game.guesses|length %}
+            {% set tile = game.guesses[row][col] %}
+            <span class="tile {{ tile[1] }}">{{ tile[0] }}</span>
+          {% else %}
+            <span class="tile">{% if row == game.guesses|length and col == 0 and game.status == "playing" %}{{ game.target[0] }}{% endif %}</span>
+          {% endif %}
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </section>
+
+    {% if game.status == "playing" %}
+    <form method="post" autocomplete="off">
+      <input id="guess" name="guess" type="text" minlength="5" maxlength="5"
+             pattern="[A-Za-z]{5}" title="Vul precies vijf letters in."
+             placeholder="Jouw woord" required autofocus>
+      <button type="submit">Gok</button>
+    </form>
+    {% else %}
+    <form method="post">
+      <button class="restart" type="submit" name="action" value="restart">Nieuw spel</button>
+    </form>
+    {% endif %}
+
+    <p class="legend">🟩 juiste letter, juiste plek &nbsp; 🟨 juiste letter, andere plek</p>
+    <p class="legend">Poging {{ game.guesses|length }} van {{ max_guesses }}</p>
+  </main>
+</body>
+</html>
