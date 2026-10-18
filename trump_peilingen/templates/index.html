@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bekijk de actuele goedkeurings- en afkeuringspeiling voor Donald Trump.">
+  <title>Trump in de peilingen</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Trump in de peilingen, startpagina">
+        <span class="brand-mark" aria-hidden="true">P</span>
+        <span>Peilingsoverzicht</span>
+      </a>
+      {% if snapshot %}
+        <a class="refresh-link" href="/?refresh=1">Ververs gegevens <span aria-hidden="true">↻</span></a>
+      {% endif %}
+    </header>
+
+    <section class="intro">
+      <p class="eyebrow">VERENIGDE STATEN · PRESIDENTIËLE PEILINGEN</p>
+      <h1>Trump in de peilingen</h1>
+      <p class="subtitle">Hoe kijken Amerikanen naar het presidentschap van Donald Trump?</p>
+    </section>
+
+    {% if error %}
+      <section class="error-card" role="alert">
+        <h2>Peilingen niet beschikbaar</h2>
+        <p>{{ error }}</p>
+        <a class="button" href="/?refresh=1">Opnieuw proberen</a>
+      </section>
+    {% elif snapshot %}
+      <section class="summary" aria-label="Samenvatting van de peiling">
+        <article class="score-card">
+          <div class="card-heading">
+            <div>
+              <p class="eyebrow">GOEDKEURING</p>
+              <h2>Goedkeuring en afkeuring</h2>
+            </div>
+            <span class="live-indicator"><span></span> ACTUEEL</span>
+          </div>
+
+          <div class="metrics">
+            <div class="metric metric-approve">
+              <span>Keurt goed</span>
+              <strong>{{ "%.1f"|format(snapshot.approve) }}<small>%</small></strong>
+            </div>
+            <div class="metric metric-disapprove">
+              <span>Keurt af</span>
+              <strong>{{ "%.1f"|format(snapshot.disapprove) }}<small>%</small></strong>
+            </div>
+            <div class="metric metric-net">
+              <span>Netto goedkeuring</span>
+              <strong>{{ "%+.1f"|format(snapshot.net_approval) }}<small> pp</small></strong>
+            </div>
+          </div>
+
+          <div class="bars" aria-label="Aandeel respondenten">
+            <div class="bar-row">
+              <span>Goedkeuring</span>
+              <div class="bar-track" role="img" aria-label="Goedkeuring: {{ "%.1f"|format(snapshot.approve) }} procent">
+                <span class="bar-fill approve" style="width: {{ snapshot.approve }}%"></span>
+              </div>
+              <strong>{{ "%.1f"|format(snapshot.approve) }}%</strong>
+            </div>
+            <div class="bar-row">
+              <span>Afkeuring</span>
+              <div class="bar-track" role="img" aria-label="Afkeuring: {{ "%.1f"|format(snapshot.disapprove) }} procent">
+                <span class="bar-fill disapprove" style="width: {{ snapshot.disapprove }}%"></span>
+              </div>
+              <strong>{{ "%.1f"|format(snapshot.disapprove) }}%</strong>
+            </div>
+          </div>
+
+          <footer class="card-footer">
+            <span>Landelijk gemiddelde · volwassenen, geregistreerde en waarschijnlijke kiezers</span>
+            <span>Opgehaald: {{ fetched_at }}</span>
+          </footer>
+        </article>
+
+        <aside class="context-card">
+          <p class="eyebrow">WAT BETEKENT DIT?</p>
+          <div class="net-number">{{ "%+.1f"|format(snapshot.net_approval) }}<span> pp</span></div>
+          {% if snapshot.net_approval > 0 %}
+            <h2>Meer goedkeuring dan afkeuring</h2>
+          {% elif snapshot.net_approval < 0 %}
+            <h2>Meer afkeuring dan goedkeuring</h2>
+          {% else %}
+            <h2>Evenveel goedkeuring als afkeuring</h2>
+          {% endif %}
+          <p>Het netto cijfer is het verschil tussen het aandeel dat Trump goedkeurt en het aandeel dat hem afkeurt.</p>
+          <a href="{{ source_url }}" rel="noopener noreferrer" target="_blank">Bekijk de bron bij DDHQ <span aria-hidden="true">↗</span></a>
+        </aside>
+      </section>
+
+      <p class="method-note">
+        Dit is een gemiddelde van opiniepeilingen, geen verkiezingsuitslag of representatieve meting van iedere Amerikaan.
+        Goedkeuring en afkeuring tellen niet altijd op tot 100%, bijvoorbeeld door onbesliste antwoorden.
+      </p>
+    {% endif %}
+
+    <footer class="page-footer">
+      <span>Bron: <a href="{{ source_url }}" rel="noopener noreferrer" target="_blank">Decision Desk HQ (DDHQ)</a></span>
+      <span>Gegevens worden maximaal elke 10 minuten vernieuwd.</span>
+    </footer>
+  </main>
+</body>
+</html>
