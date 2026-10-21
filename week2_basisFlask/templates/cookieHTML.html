@@ -1,10 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101827">
+    <title>Jouw bezoek in cijfers</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cookie.css') }}">
 </head>
-<body bgcolor="yellow">
-De waarde van het cookie is: {{cookietext}}
+<body>
+    <main class="card">
+        <div class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 19V5m0 14h16M8 15l3-4 3 2 5-7" stroke="currentColor"
+                      stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 6h3v3" stroke="currentColor" stroke-width="1.8"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+
+        <p class="eyebrow">Persoonlijke bezoeksteller</p>
+        <h1>Jouw bezoek in cijfers</h1>
+        <p class="intro">Leuk dat je er bent. Bekijk hieronder hoe vaak je deze pagina hebt bezocht.</p>
+
+        <section class="counter-panel" aria-label="Bezoekstatistiek">
+            <p class="counter-label">Jouw teller staat op</p>
+            <output
+                class="counter-value"
+                id="visit-count"
+                aria-label="{{ cookietext }} bezoeken"
+            >{{ cookietext }}</output>
+            <p class="counter-caption">bezoeken tot nu toe</p>
+        </section>
+
+        <a class="refresh-link" href="{{ url_for('index') }}">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M20 7v5h-5M4 17v-5h5" stroke="currentColor" stroke-width="1.8"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5.5 9a7 7 0 0 1 11.8-2L20 12M4 12l2.7 5a7 7 0 0 0 11.8-2"
+                      stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+            </svg>
+            Tel mijn volgende bezoek
+        </a>
+
+        <p class="privacy-note">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="5" y="10" width="14" height="11" rx="2" stroke="currentColor"
+                      stroke-width="1.7"/>
+                <path d="M8 10V7a4 4 0 1 1 8 0v3m-4 5v2" stroke="currentColor"
+                      stroke-width="1.7" stroke-linecap="round"/>
+            </svg>
+            <span>Je teller wordt bewaard in een cookie op dit apparaat.</span>
+        </p>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/cookie.js') }}" defer></script>
 </body>
 </html>
